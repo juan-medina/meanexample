@@ -3,40 +3,33 @@
 #INSTALL
 
 - Requires
-	sudo npm -g install bower
+  sudo npm -g install bower
 	
 - Optional
-	sudo npm -g install forever
+  sudo npm -g install forever
 	
 - Get source from git
-	
-	git clone https://github.com/cecile/meanexample.git
+  git clone https://github.com/cecile/meanexample.git
 
 - Install node modules
-
-	npm install
+  npm install
 	
 - Install scripts
-
-	bower install
+  bower install
 	
 #LAUNCH
 
 - via npm
-
-	npm start
+  npm start
 
 - via node
-		
-	node server.js
+  node server.js
 	
 - via forever
-
-    forever start server.js
+  forever start server.js
     
 - stop via forever
-
-	forever stopall
+  forever stopall
 	
 #FILES
 
