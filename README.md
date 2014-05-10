@@ -1,6 +1,6 @@
-MEAN examples
+#MEAN examples
 
-INSTALL
+#INSTALL
 
 - Requires
 	sudo npm -g install bower
@@ -20,7 +20,7 @@ INSTALL
 
 	bower install
 	
-LAUNCH
+#LAUNCH
 
 - via npm
 
@@ -38,42 +38,38 @@ LAUNCH
 
 	forever stopall
 	
-FILES
+#FILES
 
 - Server Side
-	MongoDB configuration
-	./config/db.js
 
-	Node Server
-	./server.js
-
-	Express Application
-	./app/routes.js
-	./app/api.js
-	./app/models/item.js
-
-	Node Modules
-	./package.json
-	./node_modules
+| ---------------------- | --------------------- |
+| MongoDB configuration  | ./config/db.js        | 
+| ---------------------- | --------------------- |
+| Node Server            | ./server.js           |
+| ---------------------- | --------------------- |
+| Express Application    | ./app/routes.js       |
+|                        | ./app/api.js          |
+|                        | ./app/models/item.js  |
+| ---------------------- | --------------------- |
+| Node Modules           | ./package.json        |
+|                        | ./node_modules        |
+| ---------------------- | --------------------- |
 
 - Client Side
 
-	Bower
-	./bower.json
-	./.bowerrc
-	./public/libs
-	
-	Simple Page HTML
-	./public/index.html
-	
-	AngularJS code
-	./public/js/app.js
-	./public/js/appRoutes.js
-	./public/js/services/ListService.js
-	./public/js/controllers/ListCtrl.js
-	./public/js/controllers/MainCtrl.js
-	
-	AngularJS views
-	./public/views/home.html
-	./public/views/list.html
-
+| ---------------------- | ----------------------------------- |
+| Bower                  | ./bower.json                        |
+|                        | ./.bowerrc                          |
+|                        | ./public/libs                       |
+| ---------------------- | ----------------------------------- |	
+| Simple Page HTML       | ./public/index.html                 |
+| ---------------------- | ----------------------------------- |
+| AngularJS code         | ./public/js/app.js                  |
+|	                     | ./public/js/appRoutes.js            |
+|	                     | ./public/js/services/ListService.js |
+|	                     | ./public/js/controllers/ListCtrl.js |
+|	                     | ./public/js/controllers/MainCtrl.js |
+| ---------------------- | ----------------------------------- |
+| AngularJS views        | ./public/views/home.html            |
+|	                     | ./public/views/list.html            |
+| ---------------------- | ----------------------------------- |
