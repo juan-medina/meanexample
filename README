@@ -65,11 +65,11 @@
 | Simple Page HTML       | ./public/index.html                 |
 | ---------------------- | ----------------------------------- |
 | AngularJS code         | ./public/js/app.js                  |
-|	                     | ./public/js/appRoutes.js            |
-|	                     | ./public/js/services/ListService.js |
-|	                     | ./public/js/controllers/ListCtrl.js |
-|	                     | ./public/js/controllers/MainCtrl.js |
+|	                 | ./public/js/appRoutes.js            |
+|	                 | ./public/js/services/ListService.js |
+|	                 | ./public/js/controllers/ListCtrl.js |
+|	                 | ./public/js/controllers/MainCtrl.js |
 | ---------------------- | ----------------------------------- |
 | AngularJS views        | ./public/views/home.html            |
-|	                     | ./public/views/list.html            |
+|	                 | ./public/views/list.html            |
 | ---------------------- | ----------------------------------- |
