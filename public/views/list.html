@@ -1,0 +1,97 @@
+<!-- public/views/list.html -->
+
+<div class="jumbotron text-center">
+	<h1>Inline List</h1>
+
+	<p>
+		{{ tagline }}
+	</p>
+
+</div>
+
+<div class="row" ng-hide='onEdit'>
+	<div class="col-xs-12">
+		<p>
+		<button class="btn btn-primary btn-lg pull-right" ng-click="addItem()" type="button" data-toggle="tooltip" data-placement="top" title="Add">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+		<button class="btn btn-primary btn-lg pull-right" ng-click="refresh()" type="button" data-toggle="tooltip" data-placement="top" title="Refresh">
+			<span class="glyphicon glyphicon-repeat"></span>
+		</button>
+		</p>
+		<br>
+		<br>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col-xs-12">
+		<div class="alert alert-danger alert-dismissable" ng-show="showAlert">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+				&times;
+			</button>
+			<strong>Error: </strong>{{alert}}
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12">
+		<div class="alert alert-success alert-dismissable" ng-show="showMessage">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+				&times;
+			</button>
+			<strong>OK: </strong>{{message}}
+		</div>
+	</div>
+</div>
+
+<div class="row" ng-hide='list.length'>
+	<div class="col-xs-12">
+		List empty!
+	</div>
+</div>
+
+
+<div class="row" ng-show='list.length'>
+	<div class="col-xs-12">
+<table class="table table-striped table-bordered table-condensed" ng-hide='onEdit'>
+	<tr >
+		<td width="80%"><strong>Name</strong></td>		
+	</tr>
+	<tr ng-repeat="item in list">		
+		<td>
+
+		<div class="input-group">
+
+			<input type="text" class="form-control" data-ng-model='item.name' ng-readonly='!item.onEdit' >
+						
+			<span class="input-group-btn">				
+					
+				<button class="btn btn-default" ng-hide='item.onEdit' ng-click="editItem(item)" type="button" data-toggle="tooltip" data-placement="top" title="Edit">
+					<span class="glyphicon glyphicon-pencil"></span>
+				</button>				
+				
+				<button class="btn btn-default" ng-hide='item.onEdit' ng-click="deleteItem(item)" type="button"data-toggle="tooltip" data-placement="top" title="Delete">
+					<span class="glyphicon glyphicon-remove"></span>
+				</button>				
+				
+				<button class="btn btn-default" ng-show='item.onEdit' ng-click="saveItem(item)" type="button" data-toggle="tooltip" data-placement="top" title="Save">
+					<span class="glyphicon glyphicon-ok"></span>
+				</button>
+				
+				<button class="btn btn-default" ng-show='item.onEdit' ng-click="undoEditItem(item)" type="button" data-toggle="tooltip" data-placement="top" title="Undo">
+					<span class="glyphicon glyphicon-repeat"></span>
+				</button>																				
+				
+			</span>
+		</div><!-- /input-group -->
+			
+			
+			
+		</td>
+	</tr>
+</table>
+	</div>
+</div>
