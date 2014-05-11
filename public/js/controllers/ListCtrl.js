@@ -5,7 +5,7 @@ angular.module('ListCtrl', []).controller('ListController', function($scope, Lis
 
 // INIT
 	//TODO: remove this to a different place 
-	$("button.btn").tooltip({
+	$(".btn").tooltip({
         placement : 'top',
         container : 'body'
     });
