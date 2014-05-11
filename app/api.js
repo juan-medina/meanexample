@@ -1,4 +1,4 @@
-// api.js
+// app/api.js
 
 //item model
 var Item = require('./models/item.js');

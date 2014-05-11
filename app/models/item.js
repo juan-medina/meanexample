@@ -1,4 +1,4 @@
-// models/item.js
+// app/models/item.js
 
 //get mongo schema
 var mongoose 	= require('mongoose')
