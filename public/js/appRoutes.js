@@ -1,6 +1,9 @@
 // public/js/appRoutes.js
+
+// create the router module
 	angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
+	// define the routes
 	$routeProvider
 
 		// home page
@@ -15,6 +18,7 @@
 			controller: 'ListController'
 		})
 
+	// set html5 mode
 	$locationProvider.html5Mode(true);
 
 }]);
