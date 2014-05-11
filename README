@@ -56,7 +56,7 @@ Work in progress examples for creating a NodeJS / Express / MongoDB RESTFull API
 |                        | ./.bowerrc               |
 |                        | ./public/libs            |
 | ---------------------- | ------------------------ |	
-| Simple Page HTML       | ./public/index.html      |
+| Sinple Page HTML       | ./public/index.html      |
 | ---------------------- | ------------------------ |
 | AngularJS code         | ./public/js/app.js       |
 |                        | ./public/js/appRoutes.js |
