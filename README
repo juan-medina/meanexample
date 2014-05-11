@@ -68,3 +68,6 @@ Work in progress examples for creating a NodeJS / Express / MongoDB RESTFull API
 | AngularJS Views        | ./public/views           |
 | ---------------------- | ------------------------ |
 
+#REFERENCES
+http://scotch.io/bar-talk/setting-up-a-mean-stack-single-page-application
+http://scotch.io/tutorials/javascript/build-a-restful-api-using-node-and-express-4
